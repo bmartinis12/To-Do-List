@@ -1,0 +1,212 @@
+/* Colors */
+
+:root {
+    --bg-color: #F0F0C9;
+    --ac-color: #508AA8;
+    --tx-color: #fff;
+}
+
+/* Resert Broswer CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Body */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--tx-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10vh auto;
+    background-color: var(--ac-color);
+    width: 80%;
+    border: 2px solid var(--tx-color);
+    border-radius: 30px;
+    min-height: 25vh;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 15px 0;
+    border-bottom: 2px solid var(--tx-color);
+    width: 100%;
+    text-align: center;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--tx-color);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--tx-color);
+    font-size: 20px;
+}
+
+textarea {
+    width: 60%;
+    max-width: 60%;
+    min-width: 25%;
+    background-color: var(--ac-color);
+    border: none;
+    font-size: 18px;
+    color: var(--tx-color);
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    resize: none;
+}
+
+::placeholder { 
+    color: var(--tx-color);
+    opacity: 1; 
+}
+
+::-webkit-resizer {
+    display: none;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+h3, input[type='checkbox'] {
+    margin-left: 15px;
+}
+
+i {
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+input[type='checkbox'] {
+    width:30px;
+    height:30px;
+}
+
+.fa-trash:hover {
+    color: #A31621;
+    cursor: pointer;
+}
+
+.fa-plus:hover {
+    color: #87A878;
+    cursor: pointer;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 5px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+/* Media query for 770px and below */
+
+@media (max-width: 28.5rem) {
+
+    .column {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 25px;
+
+    }
+
+    .add {
+        font-size: 20px;
+    }
+
+
+    textarea {
+        font-size: 12px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+    
+    input[type='checkbox'] {
+        width:20px;
+        height:20px;
+    }
+
+    .end {
+        font-size: 12px;
+    }
+}
